@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dashboard Rh & Custos</title>
+  </head>
+  <body>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        max-width: 100%;
+      }
+      body {
+        background: #202123;
+        text-align: center;
+        font-family: "Roboto", sans-serif;
+      }
+      header {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 40px;
+        background: #202123;
+      }
+      nav {
+        display: flex;
+        justify-content: space-between;
+        gap: 20px;
+      }
+      a {
+        text-decoration: none;
+        color: #fff;
+      }
+      main {
+        width: 100vw;
+      }
+      .dashboard-container {
+        height: 90vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .container {
+        display: flex;
+        align-items: center;
+        gap: 2rem;
+      }
+      .dashboard-content {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 20px;
+      }
+      h1 {
+        color: #fff;
+      }
+      p {
+        text-align: left;
+        width: 30vw;
+        color: rgb(224, 224, 224);
+      }
+      button {
+        cursor: pointer;
+        background: #343541;
+        color: #fff;
+        border: none;
+        padding: 10px 30px;
+        font-size: 1.2rem;
+        transition: 0.2s ease;
+        border-radius: 7px;
+      }
+      button:hover {
+        background: #fff;
+        color: #343541;
+        
+      }
+    </style>
+    <header>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="https://www.linkedin.com/in/jonathanbaer/">LinkedIn</a>
+      </nav>
+    </header>
+    <main>
+      <div class="dashboard-container">
+        <div class="container">
+          <div class="dashboard-content">
+            <h1>Dashboard Rh & Custos</h1>
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Commodi
+              sint fugit quod libero, nihil eius. Sunt commodi sequi recusandae
+              quasi, voluptatem eveniet debitis ut reprehenderit optio, beatae,
+              est deleniti laudantium.
+            </p>
+            <button onclick="location.href='https://app.powerbi.com/view?r=eyJrIjoiYmE3NjQ4OGUtZThkOS00M2E2LWI5NWEtOWJiMGM4YTYyMTU1IiwidCI6IjhmZDQ4YTVjLWE3MDctNDMxOS1hMjUxLTUxNGU0MzNkNTk0OCJ9'">Conferir</button>
+          </div>
+          <div class="dashboard">
+            <iframe
+              title="DashboardRH"
+              width="800"
+              height="506"
+              src="https://app.powerbi.com/view?r=eyJrIjoiYmE3NjQ4OGUtZThkOS00M2E2LWI5NWEtOWJiMGM4YTYyMTU1IiwidCI6IjhmZDQ4YTVjLWE3MDctNDMxOS1hMjUxLTUxNGU0MzNkNTk0OCJ9"
+              frameborder="0"
+              allowfullscreen="true"
+            ></iframe>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>

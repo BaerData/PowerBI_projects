@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <title>Portfolio | Power BI</title>
+    <link rel="import" href="dashboard_rh.html" />
+    <link rel="import" href="dashboard_producao_carro.html" />
+  </head>
+
+  <body>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        background: #202123;
+        text-align: center;
+        font-family: "Roboto", sans-serif;
+      }
+      header {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 40px;
+        background: #202123;
+      }
+      nav {
+        display: flex;
+        justify-content: space-between;
+        gap: 20px;
+      }
+      a {
+        text-decoration: none;
+        color: #fff;
+        font-weight: 300;
+        font-size: 16px;
+      }
+      main {
+        width: 100vw;
+        height: 100vh;
+      }
+      .content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        gap: 2rem;
+        height: 100vh;
+      }
+      .title {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+      }
+      h1 {
+        color: #fff;
+      }
+      h2 {
+        font-size: 1.2rem;
+        font-weight: 400;
+        color: #fff;
+      }
+      .btn-cv {
+        cursor: pointer;
+        background: #343541;
+        color: #fff;
+        border: none;
+        padding: 10px 20px;
+        border-radius: 5px;
+        font-size: 16px;
+        transition: 0.2s ease;
+      }
+      .btn-cv:hover {
+        background: #fff;
+        color: #343541;
+      }
+      .dashboard {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .card-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        gap: 10px;
+        background: #20212300;
+        margin: 10px;
+        padding: 5px;
+        transition: 0.3s ease;
+        filter: brightness(50%);
+      }
+      .card-container:hover {
+        background: #2d2f31;
+        border-radius: 5px;
+        filter: none;
+      }
+
+      .card-container:nth-child(1) {
+        background-image: url(Img/rg.jpg);
+        background-size: cover;
+      }
+      .card-container:nth-child(2) {
+        background-image: url(Img/carro.jpg);
+        background-size: cover;
+      }
+      .card-container:nth-child(3) {
+        background-image: url(Img/carro.jpg);
+        background-size: cover;
+      }
+
+      .card {
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        width: 500px;
+        height: 300px;
+        margin: 10px;
+        overflow: hidden;
+        cursor: pointer;
+      }
+
+      a {
+        cursor: pointer;
+        background: #343541;
+        color: #fff;
+        border: none;
+        padding: 10px 20px;
+        border-radius: 5px;
+        font-size: 16px;
+        transition: 0.2s ease;
+      }
+      a:hover {
+        background: #fff;
+        color: #343541;
+      }
+    </style>
+
+    <main>
+      <div class="content">
+        <div class="title">
+          <h1>Dashboards Power BI</h1>
+          <h2>
+            Para mais informaçoes <button class="btn-cv">Download CV</button>
+          </h2>
+        </div>
+
+        <div class="dashboard">
+          <div class="card-container">
+            <div class="card"></div>
+            <a href="dashboard_rh.html" target="_blank">Conferir</a>
+          </div>
+          <div class="card-container">
+            <div class="card"></div>
+            <a href="dashboard_producao_carro.html" target="_blank">Conferir</a>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
