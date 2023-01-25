@@ -47,6 +47,7 @@
       .container {
         display: flex;
         align-items: center;
+        flex-wrap: wrap;
         gap: 2rem;
       }
       .dashboard-content {
@@ -78,6 +79,21 @@
         color: #343541;
         
       }
+      .next {
+        
+        cursor: pointer;
+        background: #343541;
+        color: #fff;
+        border: none;
+        padding: 10px 20px;
+        border-radius: 5px;
+        font-size: 17px;
+        transition: 0.2s ease;
+      }
+      .next:hover {
+        background: #fff;
+        color: #343541;
+      }
     </style>
     <header>
       <nav>
@@ -91,10 +107,7 @@
           <div class="dashboard-content">
             <h1>Dashboard Mapa de Calor de areas afetadas</h1>
             <p>
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Commodi
-              sint fugit quod libero, nihil eius. Sunt commodi sequi recusandae
-              quasi, voluptatem eveniet debitis ut reprehenderit optio, beatae,
-              est deleniti laudantium.
+              Este dashboard tem como objetivo destacar as áreas afetadas através de um mapa de calor, além de que ele também facilite na compreensão para os gestores e líderes.
             </p>
             <button onclick="location.href='https://app.powerbi.com/view?r=eyJrIjoiNDIwOGMxOTQtZWVkNy00ZmFlLTk2NGQtZGZkMzcwMDIyMDM4IiwidCI6IjhmZDQ4YTVjLWE3MDctNDMxOS1hMjUxLTUxNGU0MzNkNTk0OCJ9'">Conferir</button>
           </div>
@@ -108,6 +121,7 @@
               allowfullscreen="true"
             ></iframe>
           </div>
+          <a href="dashboard_rh.html" class="next">Voltar</a>
         </div>
       </div>
     </main>

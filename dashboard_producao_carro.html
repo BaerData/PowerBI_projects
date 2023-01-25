@@ -46,6 +46,7 @@
       .container {
         display: flex;
         align-items: center;
+        flex-wrap: wrap;
         gap: 2rem;
       }
       .dashboard-content {
@@ -77,6 +78,21 @@
         color: #343541;
         
       }
+      .next {
+        
+        cursor: pointer;
+        background: #343541;
+        color: #fff;
+        border: none;
+        padding: 10px 20px;
+        border-radius: 5px;
+        font-size: 17px;
+        transition: 0.2s ease;
+      }
+      .next:hover {
+        background: #fff;
+        color: #343541;
+      }
     </style>
     <header>
       <nav>
@@ -90,10 +106,8 @@
           <div class="dashboard-content">
             <h1>Dashboard Gate Performance</h1>
             <p>
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Commodi
-              sint fugit quod libero, nihil eius. Sunt commodi sequi recusandae
-              quasi, voluptatem eveniet debitis ut reprehenderit optio, beatae,
-              est deleniti laudantium.
+              Dashboard de análise pós produção ou Gate, tem como objetivo destacar as áreas com maior número de não-conformidades através de um mapa de calor.<br>
+              O relatório também possui indicadores detalhando quais foram os tipos de defeitos nas regiões afetadas. 
             </p>
             <button onclick="location.href='https://app.powerbi.com/view?r=eyJrIjoiYTUyMDdjODAtNDZlNC00NzQyLWJiNTktYmUzNzU2YjM1MjRlIiwidCI6ImM0MDNiOWE0LTFjZGEtNDIwZC04YjkxLTVkMjE3MjE0NjdjNiJ9&pageName=ReportSection450b4edfbc3d0131ee07'">Conferir</button>
           </div>
@@ -107,6 +121,7 @@
               allowfullscreen="true"
             ></iframe>
           </div>
+          <a href="dashboard_aviation.html" class="next">Proximo</a>
         </div>
       </div>
     </main>

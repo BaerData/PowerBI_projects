@@ -47,6 +47,7 @@
       .container {
         display: flex;
         align-items: center;
+        flex-wrap: wrap;
         gap: 2rem;
       }
       .dashboard-content {
@@ -78,6 +79,22 @@
         color: #343541;
         
       }
+      .next {
+        
+        cursor: pointer;
+        background: #343541;
+        color: #fff;
+        border: none;
+        padding: 10px 20px;
+        border-radius: 5px;
+        font-size: 17px;
+        transition: 0.2s ease;
+      }
+      .next:hover {
+        background: #fff;
+        color: #343541;
+      }
+      
     </style>
     <header>
       <nav>
@@ -91,10 +108,8 @@
           <div class="dashboard-content">
             <h1>Dashboard Rh & Custos</h1>
             <p>
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Commodi
-              sint fugit quod libero, nihil eius. Sunt commodi sequi recusandae
-              quasi, voluptatem eveniet debitis ut reprehenderit optio, beatae,
-              est deleniti laudantium.
+              Relatório voltado para análise do quadros de funcionários, desde as suas informações pessoais ate seus custos para empresa.<br>
+              O dashboard também contém os gastos mensais de cada funcionario, cargo e até a area de atuação.
             </p>
             <button onclick="location.href='https://app.powerbi.com/view?r=eyJrIjoiYmE3NjQ4OGUtZThkOS00M2E2LWI5NWEtOWJiMGM4YTYyMTU1IiwidCI6IjhmZDQ4YTVjLWE3MDctNDMxOS1hMjUxLTUxNGU0MzNkNTk0OCJ9'">Conferir</button>
           </div>
@@ -108,6 +123,7 @@
               allowfullscreen="true"
             ></iframe>
           </div>
+          <a href="dashboard_producao_carro.html" class="next">Proximo</a>
         </div>
       </div>
     </main>
