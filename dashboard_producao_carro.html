@@ -8,13 +8,19 @@
   </head>
   <body>
     <style>
-      * {
+     * {
         margin: 0;
         padding: 0;
         box-sizing: border-box;
+        max-width: 100%;
+      }
+      :root {
+        --background: #202123;
+        --gray: #343541;
+        --white: #fff;
       }
       body {
-        background: #202123;
+        background: var(--background);
         text-align: center;
         font-family: "Roboto", sans-serif;
       }
@@ -23,7 +29,7 @@
         justify-content: center;
         align-items: center;
         height: 40px;
-        background: #202123;
+        background: var(--background);
       }
       nav {
         display: flex;
@@ -32,7 +38,7 @@
       }
       a {
         text-decoration: none;
-        color: #fff;
+        color: var(--white);
       }
       a:hover {
         color: #5b5e70;
@@ -59,7 +65,7 @@
         gap: 20px;
       }
       h1 {
-        color: #fff;
+        color: var(--white);
       }
       p {
         text-align: left;
@@ -68,8 +74,8 @@
       }
       button {
         cursor: pointer;
-        background: #343541;
-        color: #fff;
+        background: var(--gray);
+        color: var(--white);
         border: none;
         padding: 10px 30px;
         font-size: 1.2rem;
@@ -77,15 +83,15 @@
         border-radius: 7px;
       }
       button:hover {
-        background: #fff;
-        color: #343541;
+        background: var(--white);
+        color: var(--gray);
         
       }
       .next {
         
         cursor: pointer;
-        background: #343541;
-        color: #fff;
+        background: var(--gray);
+        color: var(--white);
         border: none;
         padding: 10px 20px;
         border-radius: 5px;
@@ -93,9 +99,20 @@
         transition: 0.2s ease;
       }
       .next:hover {
-        background: #fff;
-        color: #343541;
+        background: var(--white);
+        color: var(--gray);
       }
+      @media screen and (min-width:370px) and (max-width:569px){
+        .dashboard-content {
+          margin-left: 20px
+        }
+        p {
+          width: 90vw;
+        }
+        iframe {
+          height: 300px;
+        }
+	    }
     </style>
     <header>
       <nav>
