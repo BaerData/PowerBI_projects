@@ -27,6 +27,7 @@
 
       :root {
         --background: #202123;
+        --background-footer: #161618;
         --gray: #343541;
         --white: #fff;
       }
@@ -35,6 +36,7 @@
         background: var(--background);
         text-align: center;
         font-family: "Roboto", sans-serif;
+        
       }
      
       a {
@@ -44,8 +46,8 @@
         font-size: 16px;
       }
       main {
-        width: 100vw;
-        height: 100vh;
+        max-width: 100vw;
+        height: 95vh;
       }
       .content {
         display: flex;
@@ -193,8 +195,7 @@
         }
 	    }
       
-      
-
+   
 
       a {
         cursor: pointer;
@@ -209,6 +210,22 @@
       a:hover {
         background: var(--white);
         color: var(--gray);
+      }
+      footer {
+        height: 5vh;
+        background: var(--background-footer);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: var(--gray);
+      }
+      span {
+        cursor: pointer;
+        font-weight: 400;
+        font-size: 15px;
+      }
+      span:hover {
+        color: #454655;
       }
     </style>
 
@@ -238,6 +255,9 @@
         </div>
       </div>
     </main>
+    <footer>
+      <span>Desenvolvido by ©Baer</span> 
+    </footer>
     <script src="https://kit.fontawesome.com/1910d1b4ce.js" crossorigin="anonymous"></script>
   </body>
 </html>

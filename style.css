@@ -6,6 +6,7 @@
   }
   :root {
     --background: #202123;
+    --background-footer: #161618;
     --gray: #343541;
     --white: #fff;
   }
@@ -20,6 +21,8 @@
     align-items: center;
     height: 40px;
     background: var(--background);
+    position: fixed;
+    width: 100vw;
   }
   nav {
     display: flex;
@@ -35,6 +38,7 @@
   }
   main {
     width: 100vw;
+    height: 95vh;
   }
   .dashboard-container {
     height: 90vh;
@@ -92,15 +96,45 @@
     background: var(--white);
     color: var(--gray);
   }
+  footer {
+    height: 5vh;
+    background: var(--background-footer);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--gray);
+  }
+  span {
+    cursor: pointer;
+    font-weight: 400;
+    font-size: 15px;
+  }
+  span:hover {
+    color: #454655;
+  }
   @media screen and (min-width:370px) and (max-width:569px){
+    main {
+      width: 100vw;
+      height: 110vh;
+    }
+    
+    .container {
+      margin-top: 20vh;
+    }
     .dashboard-content {
-      margin-left: 20px
+      margin-top: 40px;
+      margin-left: 20px;
+      
     }
     p {
       width: 90vw;
     }
     iframe {
-      height: 300px;
+      height: 280px;
+    }
+    
+    footer {
+      height: 10vh;
     }
     }
   @media (min-width:570px) and (max-width:700px){
