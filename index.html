@@ -90,8 +90,6 @@
         align-items: center;
         justify-content: center;
       }
-      
-
       .card-container {
         display: flex;
         flex-direction: column;
@@ -109,18 +107,47 @@
         border-radius: 5px;
         filter: none;
       }
+      
 
       .card-container:nth-child(1) {
         background-image: url(Img/rh.jpg);
         background-size: cover;
+        
+      }
+      .card-container:nth-child(1):hover::after {
+        content: 'Dashboard RH & Custos';
+        color: var(--gray);
+        position: absolute;
+        font-size: 1.3em;
+        background-color: var(--white);
+        padding: 10px;
+        border-radius: 5px;
       }
       .card-container:nth-child(2) {
         background-image: url(Img/carro.jpg);
         background-size: cover;
       }
+      .card-container:nth-child(2):hover::after {
+        content: 'Dashboard Gate Performance';
+        color: var(--gray);
+        position: absolute;
+        font-size: 1.3em;
+        background-color: var(--white);
+        padding: 10px;
+        border-radius: 5px;
+      }
       .card-container:nth-child(3) {
         background-image: url(Img/aviao.jpg);
         background-size: cover;
+      }
+      .card-container:nth-child(3):hover::after {
+        content: 'Dashboard Mapa de calor';
+        color: var(--gray);
+        position: absolute;
+        font-size: 1.3em;
+        background-color: var(--white);
+        padding: 10px;
+        border-radius: 5px;
       }
 
       .card {
@@ -135,10 +162,15 @@
         cursor: pointer;
       }
 
-      @media screen and (min-width:370px) and (max-width:569px){
+      @media (min-width:370px) and (max-width:569px){
+        h1 {
+          font-size: 2em;
+        }
         h2 {
-          font-size: 1.8rem;
-          
+          font-size: 1em;
+        }
+        .btn-cv {
+          padding: 7px;
         }
         .dashboard {
           display: grid;
@@ -151,12 +183,13 @@
         }
 	    }
       @media (min-width:570px) and (max-width:700px){
+        
         .dashboard {
           display: grid;
           grid-template-columns: 1fr 1fr;
         }
         .card {
-          width: 200px;
+          width: 20px;
           height: 200px;
           
         }
