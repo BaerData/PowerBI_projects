@@ -8,6 +8,7 @@
     --background: #202123;
     --background-footer: #161618;
     --gray: #343541;
+    --gray-light: #5e5f72;
     --white: #fff;
   }
   body {
@@ -31,10 +32,10 @@
   }
   a {
     text-decoration: none;
-    color: var(--white);
+    color: var(--gray-light);
   }
   a:hover {
-    color: #5b5e70;
+    color: #82869e;
   }
   main {
     width: 100vw;

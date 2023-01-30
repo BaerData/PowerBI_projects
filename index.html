@@ -41,9 +41,8 @@
      
       a {
         text-decoration: none;
-        colovar(--white);
-        font-weight: 300;
-        font-size: 16px;
+        color:var(--gray);
+        
       }
       main {
         max-width: 100vw;
@@ -230,7 +229,7 @@
       
    
 
-      a {
+      .btn {
         cursor: pointer;
         background: var(--gray);
         color: var(--white);
@@ -240,7 +239,7 @@
         font-size: 17px;
         transition: 0.2s ease;
       }
-      a:hover {
+      .btn:hover {
         background: var(--white);
         color: var(--gray);
       }
@@ -267,29 +266,29 @@
         <div class="title">
           <h1>Dashboards Power BI</h1>
           <h2>
-            Para mais informações <a href="Img/CurriculoBI_Jonathan_2023.pdf" target="_blank" class="btn-cv">Download CV</a> ou <a href="https://www.linkedin.com/in/jonathanbaer/"><i class="fa-brands fa-linkedin"></i></a>
+            Para mais informações <a href="Img/CurriculoBI_Jonathan_2023.pdf" target="_blank" class="btn-cv">Download CV</a> ou <a href="https://www.linkedin.com/in/jonathanbaer/" class="btn-cv"><i class="fa-brands fa-linkedin"></i></a>
           </h2>
         </div>
 
         <div class="dashboard">
           <div class="card-container">
             <div class="card"></div>
-            <a href="dashboard_rh.html" target="_blank">Conferir</a>
+            <a href="dashboard_rh.html" class="btn" target="_blank">Conferir</a>
           </div>
           <div class="card-container">
             <div class="card"></div>
-            <a href="dashboard_producao_carro.html" target="_blank">Conferir</a>
+            <a href="dashboard_producao_carro.html" class="btn" target="_blank">Conferir</a>
           </div>
           <div class="card-container">
             <div class="card"></div>
-            <a href="dashboard_aviation.html" target="_blank">Conferir</a>
+            <a href="dashboard_aviation.html" class="btn" target="_blank">Conferir</a>
           </div>
           
         </div>
       </div>
     </main>
     <footer>
-      <span>Desenvolvido by ©Baer</span> 
+      <a href="https://baersenac.github.io/newPortfolio/">Desenvolvido by ©Baer</a> 
     </footer>
     <script src="https://kit.fontawesome.com/1910d1b4ce.js" crossorigin="anonymous"></script>
   </body>
