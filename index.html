@@ -148,6 +148,19 @@
         padding: 10px;
         border-radius: 5px;
       }
+      .card-container:nth-child(4) {
+        background-image: url(Img/vending-machines.webp);
+        background-size: cover;
+      }
+      .card-container:nth-child(3):hover::after {
+        content: 'Dashboard Mapa de calor';
+        color: var(--gray);
+        position: absolute;
+        font-size: 1.3em;
+        background-color: var(--white);
+        padding: 10px;
+        border-radius: 5px;
+      }
 
       .card {
         
@@ -282,6 +295,11 @@
           <div class="card-container">
             <div class="card"></div>
             <a href="dashboard_aviation.html" class="btn" target="_blank">Conferir</a>
+          </div>
+          
+          <div class="card-container">
+            <div class="card"></div>
+            <a href="dashboard_machine.html" class="btn" target="_blank">Conferir</a>
           </div>
           
         </div>
