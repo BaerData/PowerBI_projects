@@ -176,8 +176,15 @@ h2 {
 }
 @media (min-width: 570px) and (max-width: 700px) {
   .allContent {
-    display: grid;
+    
+    padding: 5vw;
   }
+
+  h2 {
+    font-size: 1em;
+    width: 80%;
+  } 
+  
   .dashboard {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -188,22 +195,36 @@ h2 {
   }
 }
 @media (min-width: 701px) and (max-width: 900px) {
+  .allContent {
+    font-size: .7em;
+    
+    padding: 5vw;
+  }
   .dashboard {
     display: grid;
     grid-template-columns: 1fr 1fr;
   }
   .card {
-    width: 200px;
+    width: 150px;
     height: 200px;
   }
+
+
 }
 @media (min-width: 901px) and (max-width: 1200px) {
+  .allContent {
+    
+    padding: 5vw;
+  }
+  h1 {
+    font-size: 1.2em;
+  }
   .dashboard {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
   }
   .card {
-    width: 200px;
+    width: 100px;
     height: 200px;
   }
 }
