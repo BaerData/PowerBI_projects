@@ -146,17 +146,20 @@ h2 {
 
 @media (min-width: 370px) and (max-width: 569px) {
   main {
-    height: 95vh;
+    height: 100vh;
   }
 
   .allContent {
     display: grid;
+    padding: 5vw;
   }
+  
 
   h1 {
     font-size: 2em;
   }
   h2 {
+    width: 100%;
     font-size: 1em;
   }
   .btn-cv {
