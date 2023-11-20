@@ -146,7 +146,7 @@ h2 {
 
 @media (min-width: 370px) and (max-width: 569px) {
   main {
-    height: 100vh;
+    height: 110vh;
   }
 
   .allContent {
