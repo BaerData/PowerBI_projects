@@ -1,0 +1,247 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  
+}
+
+:root {
+  --background: #eceaea;
+  --background-dark: #050000;
+  --color: rgb(12, 12, 12);
+  --background-footer: #1616163d;
+  --gray-light: #5a5a66;
+  --gray: #282831;
+  --white: #fff;
+  --yellow: rgb(252, 215, 8);
+  --green: #26764a;
+  --purple: rgb(81, 21, 192);
+  --gold: #BE9B61;
+}
+
+body {
+  background: var(--background);
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+}
+
+
+
+a {
+  text-decoration: none;
+  color: var(--gray);
+}
+main {
+  max-width: 100vw;
+  height: 95vh;
+}
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  gap: 2rem;
+  height: 100vh;
+}
+
+.allContent {
+  display: flex;
+  flex-direction: initial;
+  justify-content: center;
+  gap: 5vw;
+}
+.title {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 20px;
+}
+
+
+
+
+h1 {
+  color: var(--color);
+}
+h2 {
+  font-size: 1.2rem;
+  font-weight: 300;
+  text-align: left;
+  width: 20vw;
+  color: var(--color);
+}
+.btn-cv {
+  cursor: pointer;
+  background: var(--gold);
+  color: var(--color);
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 16px;
+  transition: 0.2s ease;
+}
+.btn-cv:hover {
+  background: var(--background-dark);
+  color: var(--background);
+}
+.dashboard {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  align-items: center;
+  justify-content: center;
+}
+.card-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  gap: 5px;
+  background: #20212300;
+  margin: 5px;
+  padding: 5px;
+  transition: 0.2s ease;
+  filter:  grayscale(67%);
+}
+.card-container:hover {
+  background: #2d2f31;
+  transform: scale(1.020);
+  transition: 0.2s ease ;
+  filter: none;
+}
+
+
+.card-container:nth-child(1) {
+  background-image: url(Img/rh.jpg);
+  background-size: cover;
+}
+
+.card-container:nth-child(2) {
+  background-image: url(Img/carro.jpg);
+  background-size: cover;
+}
+
+.card-container:nth-child(3) {
+  background-image: url(Img/aviaoPlanta.webp);
+  background-size: cover;
+  background-position: center;
+}
+
+.card-container:nth-child(4) {
+  background-image: url(Img/vending-machines.webp);
+  background-size: cover;
+}
+
+.card {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  height: 29vh;
+  margin: 10px;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+
+
+@media (min-width: 370px) and (max-width: 569px) {
+  main {
+    height: 95vh;
+  }
+
+  .allContent {
+    display: grid;
+  }
+
+  h1 {
+    font-size: 2em;
+  }
+  h2 {
+    font-size: 1em;
+  }
+  .btn-cv {
+    padding: 7px;
+  }
+  .dashboard {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .card {
+    width: 120px;
+    height: 20px;
+  }
+}
+@media (min-width: 570px) and (max-width: 700px) {
+  .allContent {
+    display: grid;
+  }
+  .dashboard {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .card {
+    width: 20px;
+    height: 200px;
+  }
+}
+@media (min-width: 701px) and (max-width: 900px) {
+  .dashboard {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .card {
+    width: 200px;
+    height: 200px;
+  }
+}
+@media (min-width: 901px) and (max-width: 1200px) {
+  .dashboard {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  .card {
+    width: 200px;
+    height: 200px;
+  }
+}
+@media (min-width: 1201px) and (max-width: 1350px) {
+  .dashboard {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  .card {
+    width: 200px;
+    height: 200px;
+  }
+}
+
+.btn {
+  cursor: pointer;
+  background: var(--background-dark);
+  color: var(--white);
+  border: none;
+  padding: 7px;
+  border-radius: 5px;
+  font-size: 17px;
+  transition: 0.2s ease;
+}
+
+
+.btn:hover {
+  background: var(--white);
+  color: var(--gray);
+}
+
+footer {
+  height: 5vh;
+  background: var(--background-footer);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--gray);
+}
+span {
+  cursor: pointer;
+  font-weight: 400;
+  font-size: 15px;
+}
