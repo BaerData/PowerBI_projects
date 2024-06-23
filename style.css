@@ -5,9 +5,9 @@
     max-width: 100%;
   }
   :root {
-    --background: #eceaea;
-  --background-dark: #050000;
-  --color: rgb(12, 12, 12);
+    --background: #000000;
+  --background-dark: #ffffff;
+  --color: rgb(5, 5, 5);
   --background-footer: #1616163d;
   --gray-light: #5a5a66;
   --gray: #282831;
@@ -15,7 +15,7 @@
   --yellow: rgb(252, 215, 8);
   --green: #26764a;
   --purple: rgb(81, 21, 192);
-  --gold: #BE9B61;
+  --gold: #ffffff;
   }
   body {
     background: var(--background);
@@ -99,26 +99,28 @@
   button {
     cursor: pointer;
     background: var(--background-dark);
-    color: var(--white);
+    color: black;
     border: none;
     padding: 10px 30px;
     font-size: 1.2rem;
     transition: 0.2s ease;
-    border-radius: 7px;
+    
   }
   button:hover {
-    background: var(--white);
-    color: var(--gray);
+    background: black;
+    color: white;
+    
+   
     
   }
   .next {
     
     cursor: pointer;
     background: var(--gold);
-    color: var(--background-dark);
+    color: black;
     border: none;
     padding: 10px 20px;
-    border-radius: 5px;
+    
     font-size: 17px;
     transition: 0.2s ease;
   }

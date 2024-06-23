@@ -6,9 +6,9 @@
 }
 
 :root {
-  --background: #eceaea;
+  --background: #000000;
   --background-dark: #050000;
-  --color: rgb(12, 12, 12);
+  --color: rgb(255, 255, 255);
   --background-footer: #1616163d;
   --gray-light: #5a5a66;
   --gray: #282831;
@@ -146,14 +146,21 @@ h2 {
 
 @media (min-width: 370px) and (max-width: 569px) {
   main {
-    height: 110vh;
+    height: 150vh;
   }
 
+ 
   .allContent {
     display: grid;
-    padding: 5vw;
+    padding: 15vw;
+    margin-top: 100%;
+    
   }
   
+  .title {
+    align-items: center;
+  }
+
 
   h1 {
     font-size: 2em;
